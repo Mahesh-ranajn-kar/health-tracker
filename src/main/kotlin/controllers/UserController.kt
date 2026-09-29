@@ -12,6 +12,7 @@ class UserController(private val userService: UserService) {
 
     fun getAll(ctx: Context) {
         ctx.json(userService.getAllUsers())
+        // to get all the user
     }
 
     fun getById(ctx: Context) {
